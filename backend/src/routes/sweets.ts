@@ -16,11 +16,11 @@ router.use(authenticate);
 
 router.get('/', getAllSweets);
 router.get('/search', searchSweets);
-router.get('/:id/purchase', purchaseSweet);
+router.post('/:id/purchase', purchaseSweet);
 
 // Admin only routes
 router.post('/', requireAdmin, createSweet);
-router.post('/:id', requireAdmin, updateSweet);
+router.put('/:id', requireAdmin, updateSweet);
 router.delete('/:id', requireAdmin, deleteSweet);
 router.post('/:id/restock', requireAdmin, restockSweet);
 
