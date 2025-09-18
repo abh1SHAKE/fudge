@@ -8,7 +8,7 @@ export const errorHandler = (err: any, req: Request, res: Response, next: NextFu
     console.log(err);
 
     // Mongoose bad ObjectId
-    if (err.name === 'CaseError') {
+    if (err.name === 'CastError') {
         const message = 'Resource not found';
         error = { message, statusCode: 404 };
     }
