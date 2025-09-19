@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --fudge: #5A3E36;
+  --caramel: #C68B59;
+  --cream: #FFF8F0;
+  --cocoa: #3A2D27;
+  --raspberry: #E45775; 
+}
+
+.bg-fudge { background-color: var(--fudge); }
+.bg-caramel { background-color: var(--caramel); }
+.bg-cream { background-color: var(--cream); }
+.bg-cocoa { background-color: var(--cocoa); }
+.bg-raspberry { background-color: var(--raspberry); }
+
+.text-fudge { color: var(--fudge); }
+.text-caramel { color: var(--caramel); }
+.text-cream { color: var(--cream); }
+.text-cocoa { color: var(--cocoa); }
+.text-raspberry { color: var(--raspberry); }
+
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.praise {
+  font-family: "Praise", cursive;
+}
