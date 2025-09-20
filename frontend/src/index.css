@@ -23,6 +23,12 @@
 .text-cocoa { color: var(--cocoa); }
 .text-raspberry { color: var(--raspberry); }
 
+.border-fudge { border-color: var(--fudge); }
+.border-caramel { border-color: var(--caramel); }
+.border-cream { border-color: var(--cream); }
+.border-cocoa { border-color: var(--cocoa); }
+.border-raspberry { border-color: var(--raspberry); }
+
 
 .poppins {
   font-family: "Poppins", sans-serif;
@@ -30,4 +36,13 @@
 
 .praise {
   font-family: "Praise", cursive;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
