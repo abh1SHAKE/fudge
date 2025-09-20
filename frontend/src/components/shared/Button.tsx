@@ -19,11 +19,11 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseClasses =
-    'inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+    'inline-flex items-center justify-center font-medium rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variantClasses = {
     primary: 'bg-raspberry text-white hover:bg-opacity-90 focus:ring-raspberry',
-    secondary: 'bg-caramel text-white hover:bg-opacity-90 focus:ring-caramel',
+    secondary: 'bg-transparent border-2 border-fudge text-fudge hover:bg-opacity-90 focus:ring-caramel',
     danger: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
     success: 'bg-green-600 text-white hover:bg-green-700 focus:ring-green-500',
   };

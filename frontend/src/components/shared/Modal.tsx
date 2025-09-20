@@ -56,7 +56,7 @@ export const Modal: React.FC<ModalProps> = ({
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className={`relative bg-white rounded-lg shadow-xl w-full ${sizeClasses[size]} max-h-[90vh] overflow-hidden`}
+            className={`relative bg-white rounded-2xl shadow-xl w-full ${sizeClasses[size]} max-h-[90vh] overflow-hidden`}
           >
             {title && (
               <div className='flex items-center justify-between p-6 border-b border-gray-200'>
@@ -69,7 +69,7 @@ export const Modal: React.FC<ModalProps> = ({
                 </button>
               </div>
             )}
-            <div className='overflow-y-auto max-h-[calc(90vh-8rem)]'>
+            <div className='overflow-y-auto max-h-[calc(90vh-8rem)] no-scrollbar'>
               {children}
             </div>
           </motion.div>
