@@ -6,6 +6,7 @@
 
 - User Authentication: Secure JWT-based authentication with registration and login
 - Role-Based Access: Different permissions for regular users and administrators
+  **(for admin access, email: admin@gmail.com, password: admin)**
 - Sweet Management: Complete CRUD operations for sweet inventory
 - Search & Filter: Advanced search functionality by name, category, and price range
 - Inventory Control: Purchase tracking and admin restocking capabilities
